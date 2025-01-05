@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function fetchBrands() {
     const brandSelect = document.getElementById("brand");
 
-    fetch("https://car-price-predictor-v8he.onrender.com/get_brands")
+    fetch("https://car-price-prediction-10fw.onrender.com/get_brands")
         .then(response => {
             if (!response.ok) {
                 throw new Error("Failed to fetch brands");
@@ -34,7 +34,7 @@ function fetchBrands() {
 
 // Function to enable the form once brands are loaded
 function enableForm() {
-    fetch("https://car-price-predictor-v8he.onrender.com/get_brands")
+    fetch("https://car-price-prediction-10fw.onrender.com/get_brands")
         .then(response => response.json())
         .then(() => {
             document.querySelector("button[type='submit']").disabled = false;
@@ -61,7 +61,7 @@ function onEstimatePrice(event) {
     }
 
     // Make POST request to predict price
-    fetch("https://car-price-predictor-v8he.onrender.com/predict_price", {
+    fetch("https://car-price-prediction-10fw.onrender.com/predict_price", {
         method: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
