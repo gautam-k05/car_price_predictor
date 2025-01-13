@@ -11,7 +11,33 @@ header {
     color: white;
     text-align: center;
     padding: 0.3rem;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(23, 91, 143, 0.3);
 }
+
+
+
+header h1 {
+    font-size: 2.2rem;
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+
+header .server-info {
+    font-size: 0.5rem;
+    color: white; /* Highlighted warning color */
+    margin: 0;
+    padding: 0.5rem 1rem;
+    /* background-color: #0f3950; Contrasting background */
+    border-radius: 5px;
+    display: inline-block;
+    /* box-shadow: 0px 2px 4px rgba(23, 91, 143, 0.3); */
+    margin-top: 0.5rem;
+    position: absolute; /* To position it inside the header */
+    bottom: 1px; /* Offset from the bottom */
+    right: 10px; /* Offset from the right */
+}
+
 
 main {
     padding: 2rem;
