@@ -43,7 +43,7 @@ After submitting the form, the application predicts the resale price of the car 
 
 ```
 
-├── client
+├── docs
 │   ├── app.css                # Styling for the frontend
 │   ├── app.js                 # JavaScript logic for fetching and posting data
 │   ├── index.html             # Frontend HTML structure
